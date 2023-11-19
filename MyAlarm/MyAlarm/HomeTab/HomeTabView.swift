@@ -14,7 +14,7 @@ struct HomeTabView: View {
             ForEach(HomeTabBarItems.allCases, id: \.self){ tab in
                 Text(tab.tabTitle())
                     .tabItem {
-                        Label(tab.tabTitle(), systemImage: "")
+                        Label(tab.tabTitle(), systemImage: tab.tabIcon())
                     }
             }
         }
