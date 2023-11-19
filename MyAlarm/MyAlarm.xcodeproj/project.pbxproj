@@ -7,26 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		878681F62B09E9D6004E67FD /* MyAlarmApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 878681F52B09E9D6004E67FD /* MyAlarmApp.swift */; };
-		878681F82B09E9D6004E67FD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 878681F72B09E9D6004E67FD /* ContentView.swift */; };
-		878681FA2B09E9D8004E67FD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 878681F92B09E9D8004E67FD /* Assets.xcassets */; };
-		878681FD2B09E9D8004E67FD /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 878681FC2B09E9D8004E67FD /* Preview Assets.xcassets */; };
-		878681FF2B09E9D8004E67FD /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 878681FE2B09E9D8004E67FD /* Persistence.swift */; };
-		878682022B09E9D8004E67FD /* MyAlarm.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 878682002B09E9D8004E67FD /* MyAlarm.xcdatamodeld */; };
+		878682152B09F8DE004E67FD /* MyAlarmApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 878682142B09F8DE004E67FD /* MyAlarmApp.swift */; };
+		878682172B09F8DE004E67FD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 878682162B09F8DE004E67FD /* ContentView.swift */; };
+		878682192B09F8DF004E67FD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 878682182B09F8DF004E67FD /* Assets.xcassets */; };
+		8786821C2B09F8DF004E67FD /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8786821B2B09F8DF004E67FD /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		878681F22B09E9D6004E67FD /* MyAlarm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyAlarm.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		878681F52B09E9D6004E67FD /* MyAlarmApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyAlarmApp.swift; sourceTree = "<group>"; };
-		878681F72B09E9D6004E67FD /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		878681F92B09E9D8004E67FD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		878681FC2B09E9D8004E67FD /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		878681FE2B09E9D8004E67FD /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
-		878682012B09E9D8004E67FD /* MyAlarm.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MyAlarm.xcdatamodel; sourceTree = "<group>"; };
+		878682112B09F8DE004E67FD /* MyAlarm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyAlarm.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		878682142B09F8DE004E67FD /* MyAlarmApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyAlarmApp.swift; sourceTree = "<group>"; };
+		878682162B09F8DE004E67FD /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		878682182B09F8DF004E67FD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8786821B2B09F8DF004E67FD /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		878681EF2B09E9D6004E67FD /* Frameworks */ = {
+		8786820E2B09F8DE004E67FD /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -36,39 +32,37 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		878681E92B09E9D6004E67FD = {
+		878682082B09F8DE004E67FD = {
 			isa = PBXGroup;
 			children = (
-				878681F42B09E9D6004E67FD /* MyAlarm */,
-				878681F32B09E9D6004E67FD /* Products */,
+				878682132B09F8DE004E67FD /* MyAlarm */,
+				878682122B09F8DE004E67FD /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		878681F32B09E9D6004E67FD /* Products */ = {
+		878682122B09F8DE004E67FD /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				878681F22B09E9D6004E67FD /* MyAlarm.app */,
+				878682112B09F8DE004E67FD /* MyAlarm.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		878681F42B09E9D6004E67FD /* MyAlarm */ = {
+		878682132B09F8DE004E67FD /* MyAlarm */ = {
 			isa = PBXGroup;
 			children = (
-				878681F52B09E9D6004E67FD /* MyAlarmApp.swift */,
-				878681F72B09E9D6004E67FD /* ContentView.swift */,
-				878681F92B09E9D8004E67FD /* Assets.xcassets */,
-				878681FE2B09E9D8004E67FD /* Persistence.swift */,
-				878682002B09E9D8004E67FD /* MyAlarm.xcdatamodeld */,
-				878681FB2B09E9D8004E67FD /* Preview Content */,
+				878682142B09F8DE004E67FD /* MyAlarmApp.swift */,
+				878682162B09F8DE004E67FD /* ContentView.swift */,
+				878682182B09F8DF004E67FD /* Assets.xcassets */,
+				8786821A2B09F8DF004E67FD /* Preview Content */,
 			);
 			path = MyAlarm;
 			sourceTree = "<group>";
 		};
-		878681FB2B09E9D8004E67FD /* Preview Content */ = {
+		8786821A2B09F8DF004E67FD /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
-				878681FC2B09E9D8004E67FD /* Preview Assets.xcassets */,
+				8786821B2B09F8DF004E67FD /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
 			sourceTree = "<group>";
@@ -76,13 +70,13 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		878681F12B09E9D6004E67FD /* MyAlarm */ = {
+		878682102B09F8DE004E67FD /* MyAlarm */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 878682052B09E9D8004E67FD /* Build configuration list for PBXNativeTarget "MyAlarm" */;
+			buildConfigurationList = 8786821F2B09F8DF004E67FD /* Build configuration list for PBXNativeTarget "MyAlarm" */;
 			buildPhases = (
-				878681EE2B09E9D6004E67FD /* Sources */,
-				878681EF2B09E9D6004E67FD /* Frameworks */,
-				878681F02B09E9D6004E67FD /* Resources */,
+				8786820D2B09F8DE004E67FD /* Sources */,
+				8786820E2B09F8DE004E67FD /* Frameworks */,
+				8786820F2B09F8DE004E67FD /* Resources */,
 			);
 			buildRules = (
 			);
@@ -90,25 +84,25 @@
 			);
 			name = MyAlarm;
 			productName = MyAlarm;
-			productReference = 878681F22B09E9D6004E67FD /* MyAlarm.app */;
+			productReference = 878682112B09F8DE004E67FD /* MyAlarm.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		878681EA2B09E9D6004E67FD /* Project object */ = {
+		878682092B09F8DE004E67FD /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1430;
 				LastUpgradeCheck = 1430;
 				TargetAttributes = {
-					878681F12B09E9D6004E67FD = {
+					878682102B09F8DE004E67FD = {
 						CreatedOnToolsVersion = 14.3.1;
 					};
 				};
 			};
-			buildConfigurationList = 878681ED2B09E9D6004E67FD /* Build configuration list for PBXProject "MyAlarm" */;
+			buildConfigurationList = 8786820C2B09F8DE004E67FD /* Build configuration list for PBXProject "MyAlarm" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -116,44 +110,42 @@
 				en,
 				Base,
 			);
-			mainGroup = 878681E92B09E9D6004E67FD;
-			productRefGroup = 878681F32B09E9D6004E67FD /* Products */;
+			mainGroup = 878682082B09F8DE004E67FD;
+			productRefGroup = 878682122B09F8DE004E67FD /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				878681F12B09E9D6004E67FD /* MyAlarm */,
+				878682102B09F8DE004E67FD /* MyAlarm */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		878681F02B09E9D6004E67FD /* Resources */ = {
+		8786820F2B09F8DE004E67FD /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				878681FD2B09E9D8004E67FD /* Preview Assets.xcassets in Resources */,
-				878681FA2B09E9D8004E67FD /* Assets.xcassets in Resources */,
+				8786821C2B09F8DF004E67FD /* Preview Assets.xcassets in Resources */,
+				878682192B09F8DF004E67FD /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		878681EE2B09E9D6004E67FD /* Sources */ = {
+		8786820D2B09F8DE004E67FD /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				878681FF2B09E9D8004E67FD /* Persistence.swift in Sources */,
-				878681F82B09E9D6004E67FD /* ContentView.swift in Sources */,
-				878681F62B09E9D6004E67FD /* MyAlarmApp.swift in Sources */,
-				878682022B09E9D8004E67FD /* MyAlarm.xcdatamodeld in Sources */,
+				878682172B09F8DE004E67FD /* ContentView.swift in Sources */,
+				878682152B09F8DE004E67FD /* MyAlarmApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		878682032B09E9D8004E67FD /* Debug */ = {
+		8786821D2B09F8DF004E67FD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -213,7 +205,7 @@
 			};
 			name = Debug;
 		};
-		878682042B09E9D8004E67FD /* Release */ = {
+		8786821E2B09F8DF004E67FD /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -267,7 +259,7 @@
 			};
 			name = Release;
 		};
-		878682062B09E9D8004E67FD /* Debug */ = {
+		878682202B09F8DF004E67FD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -296,7 +288,7 @@
 			};
 			name = Debug;
 		};
-		878682072B09E9D8004E67FD /* Release */ = {
+		878682212B09F8DF004E67FD /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -328,38 +320,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		878681ED2B09E9D6004E67FD /* Build configuration list for PBXProject "MyAlarm" */ = {
+		8786820C2B09F8DE004E67FD /* Build configuration list for PBXProject "MyAlarm" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				878682032B09E9D8004E67FD /* Debug */,
-				878682042B09E9D8004E67FD /* Release */,
+				8786821D2B09F8DF004E67FD /* Debug */,
+				8786821E2B09F8DF004E67FD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		878682052B09E9D8004E67FD /* Build configuration list for PBXNativeTarget "MyAlarm" */ = {
+		8786821F2B09F8DF004E67FD /* Build configuration list for PBXNativeTarget "MyAlarm" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				878682062B09E9D8004E67FD /* Debug */,
-				878682072B09E9D8004E67FD /* Release */,
+				878682202B09F8DF004E67FD /* Debug */,
+				878682212B09F8DF004E67FD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCVersionGroup section */
-		878682002B09E9D8004E67FD /* MyAlarm.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				878682012B09E9D8004E67FD /* MyAlarm.xcdatamodel */,
-			);
-			currentVersion = 878682012B09E9D8004E67FD /* MyAlarm.xcdatamodel */;
-			path = MyAlarm.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
-	rootObject = 878681EA2B09E9D6004E67FD /* Project object */;
+	rootObject = 878682092B09F8DE004E67FD /* Project object */;
 }
