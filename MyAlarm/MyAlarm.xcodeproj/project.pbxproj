@@ -30,6 +30,7 @@
 		8786822E2B0A3A1E004E67FD /* AppStrings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppStrings.swift; sourceTree = "<group>"; };
 		878682332B0A4AB7004E67FD /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		878682352B0A4B31004E67FD /* fi */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fi; path = fi.lproj/Localizable.strings; sourceTree = "<group>"; };
+		878682362B0A7123004E67FD /* ml-IN */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "ml-IN"; path = "ml-IN.lproj/Localizable.strings"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -142,6 +143,7 @@
 				en,
 				Base,
 				fi,
+				"ml-IN",
 			);
 			mainGroup = 878682082B09F8DE004E67FD;
 			productRefGroup = 878682122B09F8DE004E67FD /* Products */;
@@ -188,6 +190,7 @@
 			children = (
 				878682332B0A4AB7004E67FD /* en */,
 				878682352B0A4B31004E67FD /* fi */,
+				878682362B0A7123004E67FD /* ml-IN */,
 			);
 			name = Localizable.strings;
 			sourceTree = "<group>";
