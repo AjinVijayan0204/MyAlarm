@@ -19,26 +19,26 @@ extension HomeTabBarItems{
     func tabTitle() -> String{
         switch self{
         case .Clock:
-            return "Clock"
+            return AppStrings.Home.TabBar.clock
         case .Alarm:
-            return "Alarm"
+            return AppStrings.Home.TabBar.alarm
         case .Timer:
-            return "Timer"
+            return AppStrings.Home.TabBar.timer
         case .StopWatch:
-            return "Stopwatch"
+            return AppStrings.Home.TabBar.stopWatch
         }
     }
     
     func tabIcon() -> String{
         switch self{
         case .Clock:
-            return "clock"
+            return AppStrings.Home.TabBar.clockIcon
         case .Alarm:
-            return "alarm"
+            return AppStrings.Home.TabBar.alarmIcon
         case .Timer:
-            return "timer"
+            return AppStrings.Home.TabBar.timerIcon
         case .StopWatch:
-            return "stopwatch"
+            return AppStrings.Home.TabBar.stopWatchIcon
         }
     }
 }

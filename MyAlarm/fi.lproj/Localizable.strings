@@ -1,0 +1,12 @@
+/* 
+  Localizable.strings
+  MyAlarm
+
+  Created by Ajin on 19/11/23.
+  
+*/
+
+"Clock" = "Kello";
+"Alarm" = "Hälytys";
+"Timer" = "Ajastin";
+"Stopwatch" = "Sekuntikello";

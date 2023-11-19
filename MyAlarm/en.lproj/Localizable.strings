@@ -1,0 +1,12 @@
+/* 
+  Localizable.strings
+  MyAlarm
+
+  Created by Ajin on 19/11/23.
+  
+*/
+
+"Clock" = "Clock";
+"Alarm" = "Alarm";
+"Timer" = "Timer";
+"Stopwatch" = "Stopwatch";
