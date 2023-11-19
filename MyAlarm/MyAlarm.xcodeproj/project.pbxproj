@@ -14,6 +14,7 @@
 		878682242B09FDBD004E67FD /* HomeTabVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 878682232B09FDBD004E67FD /* HomeTabVM.swift */; };
 		8786822A2B0A18EA004E67FD /* HomeTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 878682292B0A18EA004E67FD /* HomeTabView.swift */; };
 		8786822D2B0A1A97004E67FD /* TabItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8786822C2B0A1A97004E67FD /* TabItem.swift */; };
+		8786822F2B0A3A1E004E67FD /* AppStrings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8786822E2B0A3A1E004E67FD /* AppStrings.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +26,7 @@
 		878682232B09FDBD004E67FD /* HomeTabVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTabVM.swift; sourceTree = "<group>"; };
 		878682292B0A18EA004E67FD /* HomeTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTabView.swift; sourceTree = "<group>"; };
 		8786822C2B0A1A97004E67FD /* TabItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabItem.swift; sourceTree = "<group>"; };
+		8786822E2B0A3A1E004E67FD /* AppStrings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppStrings.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +90,7 @@
 			isa = PBXGroup;
 			children = (
 				8786822C2B0A1A97004E67FD /* TabItem.swift */,
+				8786822E2B0A3A1E004E67FD /* AppStrings.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -162,6 +165,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8786822F2B0A3A1E004E67FD /* AppStrings.swift in Sources */,
 				878682172B09F8DE004E67FD /* ContentView.swift in Sources */,
 				8786822D2B0A1A97004E67FD /* TabItem.swift in Sources */,
 				878682152B09F8DE004E67FD /* MyAlarmApp.swift in Sources */,

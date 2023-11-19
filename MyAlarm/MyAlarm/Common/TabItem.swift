@@ -28,4 +28,17 @@ extension HomeTabBarItems{
             return "Stopwatch"
         }
     }
+    
+    func tabIcon() -> String{
+        switch self{
+        case .Clock:
+            return "clock"
+        case .Alarm:
+            return "alarm"
+        case .Timer:
+            return "timer"
+        case .StopWatch:
+            return "stopwatch"
+        }
+    }
 }
