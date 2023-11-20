@@ -16,6 +16,8 @@
 		8786822D2B0A1A97004E67FD /* TabItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8786822C2B0A1A97004E67FD /* TabItem.swift */; };
 		8786822F2B0A3A1E004E67FD /* AppStrings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8786822E2B0A3A1E004E67FD /* AppStrings.swift */; };
 		878682322B0A4AB7004E67FD /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 878682342B0A4AB7004E67FD /* Localizable.strings */; };
+		8786824C2B0BD194004E67FD /* ClockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8786824B2B0BD194004E67FD /* ClockView.swift */; };
+		8786824E2B0BD1A8004E67FD /* ClockVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8786824D2B0BD1A8004E67FD /* ClockVM.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +33,8 @@
 		878682332B0A4AB7004E67FD /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		878682352B0A4B31004E67FD /* fi */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fi; path = fi.lproj/Localizable.strings; sourceTree = "<group>"; };
 		878682362B0A7123004E67FD /* ml-IN */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "ml-IN"; path = "ml-IN.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		8786824B2B0BD194004E67FD /* ClockView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClockView.swift; sourceTree = "<group>"; };
+		8786824D2B0BD1A8004E67FD /* ClockVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClockVM.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +68,7 @@
 		878682132B09F8DE004E67FD /* MyAlarm */ = {
 			isa = PBXGroup;
 			children = (
+				8786824A2B0BD187004E67FD /* Clock */,
 				8786822B2B0A1A82004E67FD /* Common */,
 				878682222B09FCC4004E67FD /* HomeTab */,
 				878682142B09F8DE004E67FD /* MyAlarmApp.swift */,
@@ -98,6 +103,15 @@
 				8786822E2B0A3A1E004E67FD /* AppStrings.swift */,
 			);
 			path = Common;
+			sourceTree = "<group>";
+		};
+		8786824A2B0BD187004E67FD /* Clock */ = {
+			isa = PBXGroup;
+			children = (
+				8786824B2B0BD194004E67FD /* ClockView.swift */,
+				8786824D2B0BD1A8004E67FD /* ClockVM.swift */,
+			);
+			path = Clock;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -177,8 +191,10 @@
 				878682172B09F8DE004E67FD /* ContentView.swift in Sources */,
 				8786822D2B0A1A97004E67FD /* TabItem.swift in Sources */,
 				878682152B09F8DE004E67FD /* MyAlarmApp.swift in Sources */,
+				8786824C2B0BD194004E67FD /* ClockView.swift in Sources */,
 				878682242B09FDBD004E67FD /* HomeTabVM.swift in Sources */,
 				8786822A2B0A18EA004E67FD /* HomeTabView.swift in Sources */,
+				8786824E2B0BD1A8004E67FD /* ClockVM.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
