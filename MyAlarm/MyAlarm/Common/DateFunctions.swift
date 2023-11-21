@@ -7,7 +7,7 @@
 
 import Foundation
 
-func getTimeFormate() -> DateFormatter{
+func getTimeFormat() -> DateFormatter{
     let formatter = DateFormatter()
     formatter.dateFormat = "hh:mm ss a"
     
