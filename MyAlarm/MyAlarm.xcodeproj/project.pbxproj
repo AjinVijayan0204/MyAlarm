@@ -18,6 +18,7 @@
 		878682322B0A4AB7004E67FD /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 878682342B0A4AB7004E67FD /* Localizable.strings */; };
 		8786824C2B0BD194004E67FD /* ClockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8786824B2B0BD194004E67FD /* ClockView.swift */; };
 		8786824E2B0BD1A8004E67FD /* ClockVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8786824D2B0BD1A8004E67FD /* ClockVM.swift */; };
+		878682502B0CE779004E67FD /* DateFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8786824F2B0CE779004E67FD /* DateFunctions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +36,7 @@
 		878682362B0A7123004E67FD /* ml-IN */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "ml-IN"; path = "ml-IN.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		8786824B2B0BD194004E67FD /* ClockView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClockView.swift; sourceTree = "<group>"; };
 		8786824D2B0BD1A8004E67FD /* ClockVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClockVM.swift; sourceTree = "<group>"; };
+		8786824F2B0CE779004E67FD /* DateFunctions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateFunctions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +103,7 @@
 			children = (
 				8786822C2B0A1A97004E67FD /* TabItem.swift */,
 				8786822E2B0A3A1E004E67FD /* AppStrings.swift */,
+				8786824F2B0CE779004E67FD /* DateFunctions.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -194,6 +197,7 @@
 				8786824C2B0BD194004E67FD /* ClockView.swift in Sources */,
 				878682242B09FDBD004E67FD /* HomeTabVM.swift in Sources */,
 				8786822A2B0A18EA004E67FD /* HomeTabView.swift in Sources */,
+				878682502B0CE779004E67FD /* DateFunctions.swift in Sources */,
 				8786824E2B0BD1A8004E67FD /* ClockVM.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
