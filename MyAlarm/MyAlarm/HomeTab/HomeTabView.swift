@@ -12,7 +12,7 @@ struct HomeTabView: View {
     var body: some View {
         TabView {
             ForEach(HomeTabBarItems.allCases, id: \.self){ tab in
-                Text(tab.tabTitle())
+                ClockView(vm: ClockViewModel())
                     .tabItem {
                         Label(tab.tabTitle(), systemImage: tab.tabIcon())
                     }

@@ -7,9 +7,30 @@
 
 import Foundation
 
-func getTimeFormat() -> DateFormatter{
+func getTimeFormat(for component: TimeComponent) -> DateFormatter{
     let formatter = DateFormatter()
-    formatter.dateFormat = "hh:mm ss a"
+    formatter.dateFormat = component.getFormat()
     
     return formatter
+}
+
+enum TimeComponent{
+    case hourMin
+    case seconds
+    case meridian
+}
+
+extension TimeComponent{
+    
+    func getFormat() -> String{
+        
+        switch self{
+        case .hourMin:
+            return "hh:mm"
+        case .seconds:
+            return "s"
+        case .meridian:
+            return "a"
+        }
+    }
 }
