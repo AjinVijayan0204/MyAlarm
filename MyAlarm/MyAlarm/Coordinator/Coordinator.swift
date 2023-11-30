@@ -10,6 +10,10 @@ import SwiftUI
 
 final class Coordinator: ObservableObject{
     
+    func getScreens() -> [HomeTabBarItems]{
+        return HomeTabBarItems.allCases
+    }
+    
     @ViewBuilder
     func getView(_ page: HomeTabBarItems) -> some View{
         
@@ -20,4 +24,5 @@ final class Coordinator: ObservableObject{
             Text("View in progress")
         }
     }
+    
 }
