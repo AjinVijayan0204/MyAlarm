@@ -9,10 +9,11 @@ import SwiftUI
 
 @main
 struct MyAlarmApp: App {
-    @Environment(\.colorScheme) var colorScheme
+    @State var coordinator: Coordinator = Coordinator()
     var body: some Scene {
         WindowGroup {
             HomeTabView()
+                .environmentObject(coordinator)
         }
     }
 }

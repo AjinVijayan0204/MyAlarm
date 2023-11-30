@@ -8,14 +8,15 @@
 import SwiftUI
 
 struct HomeTabView: View {
-    
+    @EnvironmentObject var coordinator: Coordinator
     var body: some View {
         TabView {
-            ForEach(HomeTabBarItems.allCases, id: \.self){ tab in
-                ClockView(vm: ClockViewModel())
+            ForEach(coordinator.getScreens(), id: \.self){ tab in
+                coordinator.getView(tab)
                     .tabItem {
                         Label(tab.tabTitle(), systemImage: tab.tabIcon())
                     }
+                    .tag(tab.rawValue)
             }
         }
         .tint(Color(UIColor(named: "lightAndDark")!))
