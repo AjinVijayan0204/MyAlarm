@@ -8,11 +8,15 @@
 import Foundation
 import SwiftUI
 
-enum HomeTabBarItems: Int, CaseIterable{
-    case Clock = 0
+enum HomeTabBarItems: String, CaseIterable{
+    case Clock
     case Alarm
     case Timer
     case StopWatch
+    
+    var id: String {
+        return self.rawValue
+    }
 }
 
 extension HomeTabBarItems{
