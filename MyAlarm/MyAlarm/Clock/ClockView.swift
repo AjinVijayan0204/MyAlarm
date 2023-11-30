@@ -16,7 +16,7 @@ struct ClockView: View {
                     Text(vm.timeHourMin)
                     Text(vm.meridian)
                 }
-                .frame(width: proxy.size.width, alignment: .center)
+                .frame(width: proxy.size.width, height: proxy.size.height, alignment: .center)
             }
         }
     }
