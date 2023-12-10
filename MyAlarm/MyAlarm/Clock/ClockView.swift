@@ -23,7 +23,9 @@ struct ClockView: View {
 }
 
 struct ClockView_Previews: PreviewProvider {
+    @State static var coordinator = Coordinator()
     static var previews: some View {
         ClockView(vm: ClockViewModel())
+            .environmentObject(coordinator)
     }
 }

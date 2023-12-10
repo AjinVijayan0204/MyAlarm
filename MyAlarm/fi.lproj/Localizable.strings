@@ -10,3 +10,6 @@
 "Alarm" = "Hälytys";
 "Timer" = "Ajastin";
 "Stopwatch" = "Sekuntikello";
+"Stop" = "Lopettaa";
+"Pause" = "Tauko";
+"Start" = "alkaa";
