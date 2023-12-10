@@ -24,7 +24,9 @@ struct HomeTabView: View {
 }
 
 struct HomeTabView_Previews: PreviewProvider {
+    @State static var coordinator = Coordinator()
     static var previews: some View {
         HomeTabView()
+            .environmentObject(coordinator)
     }
 }

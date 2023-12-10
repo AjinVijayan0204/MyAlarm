@@ -20,6 +20,8 @@ final class Coordinator: ObservableObject{
         switch page{
         case .Clock:
             ClockView(vm: ClockViewModel())
+        case .Timer:
+            TimerView(vm: TimerViewModel())
         default:
             Text("View in progress")
         }

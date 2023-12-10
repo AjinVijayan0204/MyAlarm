@@ -18,11 +18,19 @@ struct AppStrings{
             public static let timer = String(localized: "Timer")
             public static let stopWatch = String(localized: "Stopwatch")
             
+            
             // icons
             public static let clockIcon = "clock"
             public static let alarmIcon = "alarm"
             public static let timerIcon = "timer"
             public static let stopWatchIcon = "stopwatch"
+            
         }
+    }
+    
+    struct TimeViewData{
+        public static let stop = String(localized: "Stop")
+        public static let pause = String(localized: "Pause")
+        public static let start = String(localized: "Start")
     }
 }

@@ -20,6 +20,8 @@
 		8786824E2B0BD1A8004E67FD /* ClockVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8786824D2B0BD1A8004E67FD /* ClockVM.swift */; };
 		878682502B0CE779004E67FD /* DateFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8786824F2B0CE779004E67FD /* DateFunctions.swift */; };
 		878682562B18BD69004E67FD /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 878682552B18BD69004E67FD /* Coordinator.swift */; };
+		878682592B2431F9004E67FD /* TimerVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 878682582B2431F9004E67FD /* TimerVM.swift */; };
+		8786825B2B243249004E67FD /* TimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8786825A2B243249004E67FD /* TimerView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +41,8 @@
 		8786824D2B0BD1A8004E67FD /* ClockVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClockVM.swift; sourceTree = "<group>"; };
 		8786824F2B0CE779004E67FD /* DateFunctions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateFunctions.swift; sourceTree = "<group>"; };
 		878682552B18BD69004E67FD /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		878682582B2431F9004E67FD /* TimerVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerVM.swift; sourceTree = "<group>"; };
+		8786825A2B243249004E67FD /* TimerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +76,7 @@
 		878682132B09F8DE004E67FD /* MyAlarm */ = {
 			isa = PBXGroup;
 			children = (
+				878682572B24313E004E67FD /* Timer */,
 				878682542B18BBD8004E67FD /* Coordinator */,
 				8786824A2B0BD187004E67FD /* Clock */,
 				8786822B2B0A1A82004E67FD /* Common */,
@@ -126,6 +131,15 @@
 				878682552B18BD69004E67FD /* Coordinator.swift */,
 			);
 			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		878682572B24313E004E67FD /* Timer */ = {
+			isa = PBXGroup;
+			children = (
+				878682582B2431F9004E67FD /* TimerVM.swift */,
+				8786825A2B243249004E67FD /* TimerView.swift */,
+			);
+			path = Timer;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -203,9 +217,11 @@
 			files = (
 				8786822F2B0A3A1E004E67FD /* AppStrings.swift in Sources */,
 				878682172B09F8DE004E67FD /* ContentView.swift in Sources */,
+				878682592B2431F9004E67FD /* TimerVM.swift in Sources */,
 				878682562B18BD69004E67FD /* Coordinator.swift in Sources */,
 				8786822D2B0A1A97004E67FD /* TabItem.swift in Sources */,
 				878682152B09F8DE004E67FD /* MyAlarmApp.swift in Sources */,
+				8786825B2B243249004E67FD /* TimerView.swift in Sources */,
 				8786824C2B0BD194004E67FD /* ClockView.swift in Sources */,
 				878682242B09FDBD004E67FD /* HomeTabVM.swift in Sources */,
 				8786822A2B0A18EA004E67FD /* HomeTabView.swift in Sources */,
@@ -362,6 +378,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -391,6 +408,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
