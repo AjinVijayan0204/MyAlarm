@@ -24,17 +24,18 @@ class StopwatchViewModel: ObservableObject{
         self.microSecond = "00"
     }
     
-    func startStop(){
-        if let timer = stopwatchTimer{
-            timer.invalidate()
-            stopwatchTimer = nil
-            elapsedTime = 0
-        }else{
-            stopwatchTimer = Timer.scheduledTimer(withTimeInterval: 0.01, repeats: true, block: { timer in
-                self.elapsedTime += timer.timeInterval
-                self.parseTimeFromTimer()
-            })
-        }
+    func startTimer(){
+        stopwatchTimer = Timer.scheduledTimer(withTimeInterval: 0.01, repeats: true, block: { timer in
+            self.elapsedTime += timer.timeInterval
+            self.parseTimeFromTimer()
+        })
+    }
+    
+    func stopTimer(){
+        stopwatchTimer?.invalidate()
+        stopwatchTimer = nil
+        elapsedTime = 0
+        parseTimeFromTimer()
     }
     
     func parseTimeFromTimer(){
@@ -44,8 +45,16 @@ class StopwatchViewModel: ObservableObject{
         
     }
     
-    func getAction() -> (){
-        return startStop()
+    func getAction(btn: StopwatchButtons) -> (){
+        switch btn{
+        case .start:
+            return startTimer()
+        case .reset:
+            return stopTimer()
+        default:
+            return stopTimer()
+        }
+        
     }
 }
 

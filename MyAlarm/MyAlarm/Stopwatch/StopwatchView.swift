@@ -27,7 +27,7 @@ struct StopwatchView: View {
                 HStack {
                     ForEach(StopwatchViewModel.StopwatchButtons.allCases, id: \.self){ btn in
                         Button(action: {
-                            vm.startStop()
+                            vm.getAction(btn: btn)
                         }) {
                             Text(btn.getButtonNames())
                                 .padding(.horizontal, 20)
