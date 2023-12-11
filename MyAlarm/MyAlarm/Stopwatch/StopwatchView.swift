@@ -24,25 +24,11 @@ struct StopwatchView: View {
                 }
                 .font(.system(size: 25))
                 
-                ButtonView()
-                
-                
-            }
-        }
-        
-        private struct SplitTimesView: View{
-            var body: some View{
-                ScrollView {
-                    Text("Split time")
-                }
-            }
-        }
-        
-        private struct ButtonView: View{
-            var body: some View{
                 HStack {
                     ForEach(StopwatchViewModel.StopwatchButtons.allCases, id: \.self){ btn in
-                        Button(action: {}) {
+                        Button(action: {
+                            vm.getAction(btn: btn)
+                        }) {
                             Text(btn.getButtonNames())
                                 .padding(.horizontal, 20)
                                 .padding(.vertical, 10)
@@ -50,6 +36,14 @@ struct StopwatchView: View {
                         .buttonStyle(.bordered)
                         .tint(btn.buttonColor())
                     }
+                }
+            }
+        }
+        
+        private struct SplitTimesView: View{
+            var body: some View{
+                ScrollView {
+                    Text("Split time")
                 }
             }
         }
