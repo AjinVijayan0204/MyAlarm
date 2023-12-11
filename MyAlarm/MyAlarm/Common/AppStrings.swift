@@ -33,4 +33,11 @@ struct AppStrings{
         public static let pause = String(localized: "Pause")
         public static let start = String(localized: "Start")
     }
+    
+    struct StopwatchViewData{
+            public static let reset = String(localized: "Reset")
+            public static let splitLap = String(localized: "Split")
+            public static let start = String(localized: "Start")
+        }
+
 }

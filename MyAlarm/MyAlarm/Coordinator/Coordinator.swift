@@ -22,6 +22,8 @@ final class Coordinator: ObservableObject{
             ClockView(vm: ClockViewModel())
         case .Timer:
             TimerView(vm: TimerViewModel())
+        case .StopWatch:
+            StopwatchView(vm: StopwatchViewModel())
         default:
             Text("View in progress")
         }
