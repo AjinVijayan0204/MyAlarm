@@ -53,7 +53,9 @@ class StopwatchViewModel: ObservableObject{
     }
     
     func splitTimer(){
-        self.splitTimes.insert(elapsedTime, at: 0)
+        if !state{
+            self.splitTimes.insert(elapsedTime, at: 0)
+        }
     }
     
     func parseTimeFromTimer(){
