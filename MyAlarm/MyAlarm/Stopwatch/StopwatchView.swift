@@ -50,7 +50,19 @@ struct StopwatchView: View {
             var body: some View{
                 
                 VStack{
-                    Text("Laps")
+                    ZStack{
+                        Text("Laps")
+                        HStack{
+                            Spacer()
+                            Button {
+                                vm.clearLaps()
+                            } label: {
+                                Label("Reset", systemImage: "arrow.clockwise")
+                            }
+                            .padding(.trailing, 20)
+                            .buttonStyle(.automatic)
+                        }
+                    }
                     List {
                         ForEach(vm.splitTimes, id: \.self) { data in
                             Text(data.timerDisplay)

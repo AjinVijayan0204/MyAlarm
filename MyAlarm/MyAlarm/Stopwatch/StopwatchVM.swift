@@ -26,6 +26,10 @@ class StopwatchViewModel: ObservableObject{
         self.microSecond = "00"
     }
     
+    func clearLaps(){
+        self.splitTimes = []
+    }
+    
     func startTimer(){
         if state{
             stopwatchTimer = Timer.scheduledTimer(withTimeInterval: 0.01, repeats: true, block: { timer in
