@@ -23,13 +23,14 @@ struct StopwatchView: View {
                     
                 }
                 .font(.system(size: 25))
+                .padding(.top, 150)
                 
                 HStack {
                     ForEach(StopwatchViewModel.StopwatchButtons.allCases, id: \.self){ btn in
                         Button(action: {
                             vm.getAction(btn: btn)
                         }) {
-                            Text(btn.getButtonNames())
+                            Text(btn.getButtonNames(started: vm.state))
                                 .padding(.horizontal, 20)
                                 .padding(.vertical, 10)
                         }
@@ -37,13 +38,36 @@ struct StopwatchView: View {
                         .tint(btn.buttonColor())
                     }
                 }
+                
+                SplitTimesView(vm: vm)
+                    .padding(.top, 50)
+                    .padding(.bottom,50)
             }
         }
         
         private struct SplitTimesView: View{
+            @ObservedObject var vm: StopwatchViewModel
             var body: some View{
-                ScrollView {
-                    Text("Split time")
+                
+                VStack{
+                    ZStack{
+                        Text("Laps")
+                        HStack{
+                            Spacer()
+                            Button {
+                                vm.clearLaps()
+                            } label: {
+                                Label("Reset", systemImage: "arrow.clockwise")
+                            }
+                            .padding(.trailing, 20)
+                            .buttonStyle(.automatic)
+                        }
+                    }
+                    List {
+                        ForEach(vm.splitTimes, id: \.self) { data in
+                            Text(data.timerDisplay)
+                        }
+                    }
                 }
             }
         }

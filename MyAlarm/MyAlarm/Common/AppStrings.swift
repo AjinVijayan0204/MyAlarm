@@ -38,6 +38,7 @@ struct AppStrings{
             public static let reset = String(localized: "Reset")
             public static let splitLap = String(localized: "Split")
             public static let start = String(localized: "Start")
+            public static let stop = String(localized: "Stop")
         }
 
 }
