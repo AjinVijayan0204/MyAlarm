@@ -65,7 +65,7 @@ class StopwatchViewModel: ObservableObject{
         
     }
     
-    func getAction(btn: StopwatchButtons) -> (){
+    func getAction(btn: StopwatchButtons){
         switch btn{
         case .start:
             return startTimer()
