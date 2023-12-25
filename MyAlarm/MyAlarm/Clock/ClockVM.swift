@@ -14,6 +14,7 @@ class ClockViewModel: ObservableObject{
     @Published var seconds: String
     @Published var meridian: String
     
+    var zone: TimeZone = TimeZone.current
     var updateTime: Timer{
         Timer.scheduledTimer(withTimeInterval: 1, repeats: true) { _ in
             self.timeHourMin = getTimeFormat(for: .hourMin).string(from: Date())

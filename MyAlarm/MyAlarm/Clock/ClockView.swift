@@ -11,13 +11,12 @@ struct ClockView: View {
     @ObservedObject var vm: ClockViewModel
     var body: some View {
         VStack{
+            
             GeometryReader{ proxy in
-                HStack(spacing: 2){
-                    Text(vm.timeHourMin)
-                    Text(vm.meridian)
-                }
-                .frame(width: proxy.size.width, height: proxy.size.height, alignment: .center)
+                CurrentTimeView(vm: vm)
+                    .frame(width: proxy.size.width, height: proxy.size.height / 4, alignment: .center)
             }
+            
         }
     }
 }
