@@ -27,4 +27,8 @@ class ClockViewModel: ObservableObject{
         (self.timeHourMin, self.seconds, self.meridian) = ("", "", "")
         let _ = updateTime
     }
+    
+    func addTimeZone(){
+        
+    }
 }
