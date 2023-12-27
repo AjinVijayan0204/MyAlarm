@@ -8,7 +8,10 @@
 import SwiftUI
 
 struct ClockView: View {
+    
     @ObservedObject var vm: ClockViewModel
+    @EnvironmentObject var coordinator: Coordinator
+    
     var body: some View {
         // whole screen
         GeometryReader{ proxy in
@@ -21,7 +24,7 @@ struct ClockView: View {
                 HStack{
                     Spacer()
                     Button {
-                        vm.addTimeZone()
+                        coordinator.goPopUp()
                     } label: {
                         Image(systemName: "plus")
                             .resizable()

@@ -10,7 +10,7 @@ import SwiftUI
 struct HomeTabView: View {
     @EnvironmentObject var coordinator: Coordinator
     var body: some View {
-        TabView {
+        TabView(selection: $coordinator.currentTab) {
             ForEach(coordinator.getScreens(), id: \.self){ tab in
                 coordinator.getView(tab)
                     .tabItem {
@@ -20,6 +20,9 @@ struct HomeTabView: View {
             }
         }
         .tint(Color(UIColor(named: "lightAndDark")!))
+        .sheet(item: $coordinator.sheet) { sheet in
+            coordinator.getPopUpView(sheet)
+        }
     }
 }
 
