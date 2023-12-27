@@ -10,8 +10,15 @@ import SwiftUI
 
 final class Coordinator: ObservableObject{
     
+    @Published var currentTab: HomeTabBarItems = .Clock
+    @Published var sheet: Sheet?
+    
     func getScreens() -> [HomeTabBarItems]{
         return HomeTabBarItems.allCases
+    }
+    
+    func goPopUp(){
+        sheet = .popup
     }
     
     @ViewBuilder
@@ -29,4 +36,17 @@ final class Coordinator: ObservableObject{
         }
     }
     
+    @ViewBuilder
+    func getPopUpView(_ sheet: Sheet) -> some View{
+        switch sheet{
+        case .popup:
+            TimezoneView()
+        }
+    }
+}
+
+enum Sheet: String, CaseIterable, Identifiable{
+    case popup
+    
+    var id: String{ self.rawValue }
 }
