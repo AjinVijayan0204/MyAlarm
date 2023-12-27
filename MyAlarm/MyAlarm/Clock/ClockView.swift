@@ -10,13 +10,33 @@ import SwiftUI
 struct ClockView: View {
     @ObservedObject var vm: ClockViewModel
     var body: some View {
-        VStack{
-            GeometryReader{ proxy in
-                HStack(spacing: 2){
-                    Text(vm.timeHourMin)
-                    Text(vm.meridian)
+        // whole screen
+        GeometryReader{ proxy in
+            VStack{
+                //clock view with time zone
+                CurrentTimeView(vm: vm)
+                    .frame(width: proxy.size.width, height: proxy.size.height / 6, alignment: .bottom)
+                    .padding(.bottom)
+                //button bar
+                HStack{
+                    Spacer()
+                    Button {
+                        vm.addTimeZone()
+                    } label: {
+                        Image(systemName: "plus")
+                            .resizable()
+                            .scaledToFit()
+                    }
+                    .frame(width: 30)
                 }
-                .frame(width: proxy.size.width, height: proxy.size.height, alignment: .center)
+                .padding(.trailing, 30)
+                
+                List{
+                    
+                }
+                .frame(width: proxy.size.width, height: proxy.size.height / 1.5, alignment: .bottom)
+                .border(.black)
+                
             }
         }
     }

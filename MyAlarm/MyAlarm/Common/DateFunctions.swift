@@ -26,9 +26,9 @@ extension TimeComponent{
         
         switch self{
         case .hourMin:
-            return "hh:mm"
+            return "hh:mm:ss"
         case .seconds:
-            return "s"
+            return "ss"
         case .meridian:
             return "a"
         }
