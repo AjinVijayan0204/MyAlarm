@@ -17,7 +17,7 @@ struct ClockView: View {
         GeometryReader{ proxy in
             VStack{
                 //clock view with time zone
-                CurrentTimeView(vm: vm)
+                CurrentTimeView()
                     .frame(width: proxy.size.width, height: proxy.size.height / 6, alignment: .bottom)
                     .padding(.bottom)
                 //button bar
