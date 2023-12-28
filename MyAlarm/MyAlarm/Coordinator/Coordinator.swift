@@ -41,6 +41,7 @@ final class Coordinator: ObservableObject{
         switch sheet{
         case .popup:
             TimezoneView()
+                .presentationDetents([.height(300), .medium])
         }
     }
 }
