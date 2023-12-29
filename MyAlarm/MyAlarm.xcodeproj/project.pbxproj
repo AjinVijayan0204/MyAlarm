@@ -27,6 +27,7 @@
 		87F201C12B3E771600158232 /* TimezoneView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87F201C02B3E771600158232 /* TimezoneView.swift */; };
 		87F201C32B3E774000158232 /* CurrentTimeVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87F201C22B3E774000158232 /* CurrentTimeVM.swift */; };
 		87F201C52B3E775400158232 /* CurrentTimeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87F201C42B3E775400158232 /* CurrentTimeView.swift */; };
+		87F201C72B3E828900158232 /* TimezoneVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87F201C62B3E828900158232 /* TimezoneVM.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -53,6 +54,7 @@
 		87F201C02B3E771600158232 /* TimezoneView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimezoneView.swift; sourceTree = "<group>"; };
 		87F201C22B3E774000158232 /* CurrentTimeVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentTimeVM.swift; sourceTree = "<group>"; };
 		87F201C42B3E775400158232 /* CurrentTimeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentTimeView.swift; sourceTree = "<group>"; };
+		87F201C62B3E828900158232 /* TimezoneVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimezoneVM.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +90,7 @@
 			isa = PBXGroup;
 			children = (
 				87F201C02B3E771600158232 /* TimezoneView.swift */,
+				87F201C62B3E828900158232 /* TimezoneVM.swift */,
 			);
 			path = TimezoneSelection;
 			sourceTree = "<group>";
@@ -261,6 +264,7 @@
 				8786822D2B0A1A97004E67FD /* TabItem.swift in Sources */,
 				878682152B09F8DE004E67FD /* MyAlarmApp.swift in Sources */,
 				8759206E2B2712B000BCBBB4 /* StopwatchVM.swift in Sources */,
+				87F201C72B3E828900158232 /* TimezoneVM.swift in Sources */,
 				8786825B2B243249004E67FD /* TimerView.swift in Sources */,
 				8786824C2B0BD194004E67FD /* ClockView.swift in Sources */,
 				878682242B09FDBD004E67FD /* HomeTabVM.swift in Sources */,

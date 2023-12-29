@@ -40,7 +40,7 @@ final class Coordinator: ObservableObject{
     func getPopUpView(_ sheet: Sheet) -> some View{
         switch sheet{
         case .popup:
-            TimezoneView()
+            TimezoneView(vm: TimezoneViewModel())
                 .presentationDetents([.height(300), .medium])
         }
     }
