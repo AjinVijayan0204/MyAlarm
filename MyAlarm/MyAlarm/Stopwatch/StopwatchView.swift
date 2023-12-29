@@ -64,8 +64,12 @@ struct StopwatchView: View {
                         }
                     }
                     List {
-                        ForEach(vm.splitTimes, id: \.self) { data in
-                            Text(data.timerDisplay)
+                        if !vm.splitTimes.isEmpty {
+                            ForEach(vm.splitTimes, id: \.self) { data in
+                                Text(data.timerDisplay)
+                            }
+                        } else {
+                            Text("")
                         }
                     }
                 }
