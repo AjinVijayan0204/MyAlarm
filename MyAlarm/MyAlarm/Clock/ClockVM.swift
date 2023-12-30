@@ -10,7 +10,9 @@ import Combine
 
 class ClockViewModel: ObservableObject{
     
-    func addTimeZone(){
-        
+    @Published var timezones: [String] = []
+    
+    func addTimeZone(named timeZone: String){
+        timezones.append(timeZone)
     }
 }

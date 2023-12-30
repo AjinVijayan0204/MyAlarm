@@ -16,7 +16,7 @@ struct TimezoneView: View {
             HStack{
                 Spacer()
                 Button {
-                    //
+                    vm.addZone()
                 } label: {
                     Text("Done")
                 }
