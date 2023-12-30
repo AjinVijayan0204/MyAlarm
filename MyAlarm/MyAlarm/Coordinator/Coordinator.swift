@@ -12,6 +12,7 @@ final class Coordinator: ObservableObject{
     
     @Published var currentTab: HomeTabBarItems = .Clock
     @Published var sheet: Sheet?
+    var container = Container.shared
     
     func getScreens() -> [HomeTabBarItems]{
         return HomeTabBarItems.allCases
@@ -26,11 +27,11 @@ final class Coordinator: ObservableObject{
         
         switch page{
         case .Clock:
-            ClockView(vm: ClockViewModel())
+            ClockView(vm: container.clockVM)
         case .Timer:
-            TimerView(vm: TimerViewModel())
+            TimerView(vm: container.timerVM)
         case .StopWatch:
-            StopwatchView(vm: StopwatchViewModel())
+            StopwatchView(vm: container.stopwatchVM)
         default:
             Text("View in progress")
         }
@@ -40,7 +41,7 @@ final class Coordinator: ObservableObject{
     func getPopUpView(_ sheet: Sheet) -> some View{
         switch sheet{
         case .popup:
-            TimezoneView(vm: TimezoneViewModel())
+            TimezoneView(vm: Container.shared.timeVM)
                 .presentationDetents([.height(300), .medium])
         }
     }

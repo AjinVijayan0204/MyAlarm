@@ -28,6 +28,7 @@
 		87F201C32B3E774000158232 /* CurrentTimeVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87F201C22B3E774000158232 /* CurrentTimeVM.swift */; };
 		87F201C52B3E775400158232 /* CurrentTimeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87F201C42B3E775400158232 /* CurrentTimeView.swift */; };
 		87F201C72B3E828900158232 /* TimezoneVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87F201C62B3E828900158232 /* TimezoneVM.swift */; };
+		87F201CA2B40601200158232 /* Container.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87F201C92B40601200158232 /* Container.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -55,6 +56,7 @@
 		87F201C22B3E774000158232 /* CurrentTimeVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentTimeVM.swift; sourceTree = "<group>"; };
 		87F201C42B3E775400158232 /* CurrentTimeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentTimeView.swift; sourceTree = "<group>"; };
 		87F201C62B3E828900158232 /* TimezoneVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimezoneVM.swift; sourceTree = "<group>"; };
+		87F201C92B40601200158232 /* Container.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Container.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +117,7 @@
 		878682132B09F8DE004E67FD /* MyAlarm */ = {
 			isa = PBXGroup;
 			children = (
+				87F201C82B40600200158232 /* Container */,
 				8759206C2B27121F00BCBBB4 /* Stopwatch */,
 				878682572B24313E004E67FD /* Timer */,
 				878682542B18BBD8004E67FD /* Coordinator */,
@@ -182,6 +185,14 @@
 				8786825A2B243249004E67FD /* TimerView.swift */,
 			);
 			path = Timer;
+			sourceTree = "<group>";
+		};
+		87F201C82B40600200158232 /* Container */ = {
+			isa = PBXGroup;
+			children = (
+				87F201C92B40601200158232 /* Container.swift */,
+			);
+			path = Container;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -261,6 +272,7 @@
 				878682172B09F8DE004E67FD /* ContentView.swift in Sources */,
 				878682592B2431F9004E67FD /* TimerVM.swift in Sources */,
 				878682562B18BD69004E67FD /* Coordinator.swift in Sources */,
+				87F201CA2B40601200158232 /* Container.swift in Sources */,
 				8786822D2B0A1A97004E67FD /* TabItem.swift in Sources */,
 				878682152B09F8DE004E67FD /* MyAlarmApp.swift in Sources */,
 				8759206E2B2712B000BCBBB4 /* StopwatchVM.swift in Sources */,

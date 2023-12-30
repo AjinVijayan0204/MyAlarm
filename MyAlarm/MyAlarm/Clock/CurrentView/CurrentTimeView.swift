@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct CurrentTimeView: View {
-    @ObservedObject var vm = CurrentTimeViewModel()
+    @ObservedObject var vm = Container.shared.currentTimeVM
     var body: some View {
         VStack{
             Text(vm.timeHourMin)
