@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		8759206E2B2712B000BCBBB4 /* StopwatchVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8759206D2B2712B000BCBBB4 /* StopwatchVM.swift */; };
 		875920702B2712D700BCBBB4 /* StopwatchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8759206F2B2712D700BCBBB4 /* StopwatchView.swift */; };
+		878226762B45351800552FB1 /* TimeZoneCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 878226752B45351800552FB1 /* TimeZoneCellView.swift */; };
+		878226782B45354400552FB1 /* TimeZoneCellVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 878226772B45354400552FB1 /* TimeZoneCellVM.swift */; };
 		878682152B09F8DE004E67FD /* MyAlarmApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 878682142B09F8DE004E67FD /* MyAlarmApp.swift */; };
 		878682172B09F8DE004E67FD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 878682162B09F8DE004E67FD /* ContentView.swift */; };
 		878682192B09F8DF004E67FD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 878682182B09F8DF004E67FD /* Assets.xcassets */; };
@@ -34,6 +36,8 @@
 /* Begin PBXFileReference section */
 		8759206D2B2712B000BCBBB4 /* StopwatchVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopwatchVM.swift; sourceTree = "<group>"; };
 		8759206F2B2712D700BCBBB4 /* StopwatchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopwatchView.swift; sourceTree = "<group>"; };
+		878226752B45351800552FB1 /* TimeZoneCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeZoneCellView.swift; sourceTree = "<group>"; };
+		878226772B45354400552FB1 /* TimeZoneCellVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeZoneCellVM.swift; sourceTree = "<group>"; };
 		878682112B09F8DE004E67FD /* MyAlarm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyAlarm.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		878682142B09F8DE004E67FD /* MyAlarmApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyAlarmApp.swift; sourceTree = "<group>"; };
 		878682162B09F8DE004E67FD /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -95,6 +99,15 @@
 				87F201C62B3E828900158232 /* TimezoneVM.swift */,
 			);
 			path = TimezoneSelection;
+			sourceTree = "<group>";
+		};
+		878226742B45346000552FB1 /* TimeZonecell */ = {
+			isa = PBXGroup;
+			children = (
+				878226752B45351800552FB1 /* TimeZoneCellView.swift */,
+				878226772B45354400552FB1 /* TimeZoneCellVM.swift */,
+			);
+			path = TimeZonecell;
 			sourceTree = "<group>";
 		};
 		878682082B09F8DE004E67FD = {
@@ -162,6 +175,7 @@
 		8786824A2B0BD187004E67FD /* Clock */ = {
 			isa = PBXGroup;
 			children = (
+				878226742B45346000552FB1 /* TimeZonecell */,
 				8759207B2B3C252A00BCBBB4 /* TimezoneSelection */,
 				875920762B39C0C800BCBBB4 /* CurrentView */,
 				8786824B2B0BD194004E67FD /* ClockView.swift */,
@@ -271,8 +285,10 @@
 				8786822F2B0A3A1E004E67FD /* AppStrings.swift in Sources */,
 				878682172B09F8DE004E67FD /* ContentView.swift in Sources */,
 				878682592B2431F9004E67FD /* TimerVM.swift in Sources */,
+				878226762B45351800552FB1 /* TimeZoneCellView.swift in Sources */,
 				878682562B18BD69004E67FD /* Coordinator.swift in Sources */,
 				87F201CA2B40601200158232 /* Container.swift in Sources */,
+				878226782B45354400552FB1 /* TimeZoneCellVM.swift in Sources */,
 				8786822D2B0A1A97004E67FD /* TabItem.swift in Sources */,
 				878682152B09F8DE004E67FD /* MyAlarmApp.swift in Sources */,
 				8759206E2B2712B000BCBBB4 /* StopwatchVM.swift in Sources */,
