@@ -44,8 +44,6 @@ struct ClockView: View {
                     }
                 }
                 .frame(width: proxy.size.width, height: proxy.size.height / 1.5, alignment: .bottom)
-                .border(.black)
-                
             }
         }
     }

@@ -28,11 +28,12 @@ struct TimeZoneCellView: View {
             VStack {
                 Spacer()
                 Text("am")
-                    .padding(.bottom, 30)
+                    .padding(.bottom, 32)
             }
         }
         .padding(.horizontal)
         .frame(height: 100)
+        .clipShape(RoundedRectangle(cornerRadius: 5))
     }
 }
 
