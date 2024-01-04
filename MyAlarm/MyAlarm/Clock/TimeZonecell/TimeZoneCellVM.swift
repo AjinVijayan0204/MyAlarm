@@ -15,6 +15,11 @@ class TimeZoneCellViewModel: ObservableObject{
     @Published var difference: (String, String)
     
     var timeZone: String
+    var updateTime: Timer{
+        Timer.scheduledTimer(withTimeInterval: 1, repeats: true) { _ in
+            self.getTime()
+        }
+    }
     
     init(timeZone: String) {
         self.timeZone = timeZone
@@ -23,7 +28,7 @@ class TimeZoneCellViewModel: ObservableObject{
         self.difference = ("10","30")
         self.zone = ""
         getZone()
-        getTime()
+        let _ = updateTime
     }
     
     func getZone(){
@@ -35,7 +40,7 @@ class TimeZoneCellViewModel: ObservableObject{
     func getTime(){
         self.time = getTimeFormat(for: .hourMin, at: timeZone).string(from: Date())
         self.meridian = getTimeFormat(for: .meridian, at: timeZone).string(from: Date())
-        print(getTimeDifference(of: timeZone))
+        //print(getTimeDifference(of: timeZone))
         let min = (getTimeDifference(of: timeZone) % 3600) / 60
         let hour = getTimeDifference(of: timeZone) / (60 * 60)
         self.difference = (String(hour), String(min))

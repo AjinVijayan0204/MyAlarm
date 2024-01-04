@@ -15,9 +15,10 @@ class TimezoneViewModel: ObservableObject{
         }
     }
     
-    @Published var selected: String = TimeZone.current.identifier
+    @Published var selected: String = TimeZone.abbreviationDictionary.first { (key, value) in
+        value == TimeZone.current.identifier
+    }!.key
     var clockVM: ClockViewModel = Container.shared.clockVM
-    
     
     func addZone(){
         clockVM.addTimeZone(named: self.selected)

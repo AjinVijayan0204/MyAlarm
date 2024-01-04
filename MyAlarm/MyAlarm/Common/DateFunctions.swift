@@ -10,7 +10,7 @@ import Foundation
 func getTimeFormat(for component: TimeComponent, at timeZone: String = TimeZone.current.identifier) -> DateFormatter{
     let formatter = DateFormatter()
     formatter.dateFormat = component.getFormat()
-    formatter.timeZone = TimeZone(identifier: timeZone)
+    formatter.timeZone = TimeZone(identifier: TimeZone.abbreviationDictionary[timeZone] ?? "")
     
     return formatter
 }
@@ -20,7 +20,7 @@ func getTimeDifference(of zone: String) -> Int{
     let formatter2 = DateFormatter()
     
     formatter1.timeZone = TimeZone.current
-    formatter2.timeZone = TimeZone(identifier: zone)
+    formatter2.timeZone = TimeZone(identifier: TimeZone.abbreviationDictionary[zone] ?? "")
     
     let diff = formatter1.timeZone.secondsFromGMT() - formatter2.timeZone.secondsFromGMT()
     return diff
