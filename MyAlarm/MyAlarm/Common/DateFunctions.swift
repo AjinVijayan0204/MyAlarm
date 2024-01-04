@@ -15,6 +15,17 @@ func getTimeFormat(for component: TimeComponent, at timeZone: String = TimeZone.
     return formatter
 }
 
+func getTimeDifference(of zone: String) -> Int{
+    let formatter1 = DateFormatter()
+    let formatter2 = DateFormatter()
+    
+    formatter1.timeZone = TimeZone.current
+    formatter2.timeZone = TimeZone(identifier: zone)
+    
+    let diff = formatter1.timeZone.secondsFromGMT() - formatter2.timeZone.secondsFromGMT()
+    return diff
+}
+
 enum TimeComponent{
     case hourMin
     case seconds

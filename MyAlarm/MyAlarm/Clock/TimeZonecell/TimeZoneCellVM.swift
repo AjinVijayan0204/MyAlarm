@@ -23,6 +23,7 @@ class TimeZoneCellViewModel: ObservableObject{
         self.difference = ("10","30")
         self.zone = ""
         getZone()
+        getTime()
     }
     
     func getZone(){
@@ -32,6 +33,8 @@ class TimeZoneCellViewModel: ObservableObject{
     }
     
     func getTime(){
-        
+        self.time = getTimeFormat(for: .hourMin, at: timeZone).string(from: Date())
+        self.meridian = getTimeFormat(for: .meridian, at: timeZone).string(from: Date())
+         
     }
 }
