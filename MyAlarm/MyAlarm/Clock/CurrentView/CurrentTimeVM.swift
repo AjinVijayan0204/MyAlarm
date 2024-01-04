@@ -16,7 +16,7 @@ class CurrentTimeViewModel: ObservableObject{
     var zone: TimeZone = TimeZone.current
     var updateTime: Timer{
         Timer.scheduledTimer(withTimeInterval: 1, repeats: true) { _ in
-            self.timeHourMin = getTimeFormat(for: .hourMin).string(from: Date())
+            self.timeHourMin = getTimeFormat(for: .hourMinSec).string(from: Date())
             self.seconds = getTimeFormat(for: .seconds).string(from: Date())
             self.meridian = getTimeFormat(for: .meridian).string(from: Date())
         }

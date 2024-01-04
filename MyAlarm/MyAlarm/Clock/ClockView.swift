@@ -34,18 +34,17 @@ struct ClockView: View {
                 }
                 .padding(.trailing, 30)
                 
-                List{
+                ScrollView{
                     if vm.timezones.isEmpty{
                         Text("")
                     }else{
                         ForEach(vm.timezones, id: \.self){ zone in
-                            Text(zone)
+                            TimeZoneCellView(vm: TimeZoneCellViewModel(timeZone: zone))
+                                .padding(.all, 2)
                         }
                     }
                 }
                 .frame(width: proxy.size.width, height: proxy.size.height / 1.5, alignment: .bottom)
-                .border(.black)
-                
             }
         }
     }

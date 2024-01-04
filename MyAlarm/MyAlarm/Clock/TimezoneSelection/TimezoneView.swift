@@ -10,6 +10,7 @@ import SwiftUI
 struct TimezoneView: View {
     
     @ObservedObject var vm: TimezoneViewModel
+    @Environment(\.presentationMode) private var presentationMode
     
     var body: some View {
         VStack{
@@ -17,6 +18,7 @@ struct TimezoneView: View {
                 Spacer()
                 Button {
                     vm.addZone()
+                    presentationMode.wrappedValue.dismiss()
                 } label: {
                     Text("Done")
                 }
@@ -27,7 +29,7 @@ struct TimezoneView: View {
             Spacer()
             Picker(selection: $vm.selected) {
                 ForEach(vm.timeZones, id: \.self){ zone in
-                    Text(zone)
+                    Text(vm.getZone(for: zone))
                 }
             } label: {
                 //
