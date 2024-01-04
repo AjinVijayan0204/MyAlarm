@@ -7,9 +7,10 @@
 
 import Foundation
 
-func getTimeFormat(for component: TimeComponent) -> DateFormatter{
+func getTimeFormat(for component: TimeComponent, at timeZone: String = TimeZone.current.identifier) -> DateFormatter{
     let formatter = DateFormatter()
     formatter.dateFormat = component.getFormat()
+    formatter.timeZone = TimeZone(identifier: timeZone)
     
     return formatter
 }
