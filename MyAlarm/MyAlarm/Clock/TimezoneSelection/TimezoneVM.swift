@@ -15,7 +15,7 @@ class TimezoneViewModel: ObservableObject{
         }
     }
     
-    @Published var selected: String = TimeZone.abbreviationDictionary.first { (key, value) in
+    @Published var selected: String = TimeZone.abbreviationDictionary.first { (_, value) in
         value == TimeZone.current.identifier
     }!.key
     var clockVM: ClockViewModel = Container.shared.clockVM
