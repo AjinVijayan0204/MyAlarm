@@ -9,36 +9,41 @@ import SwiftUI
 
 struct TimeZoneCellView: View {
     
-    @ObservedObject var vm: TimeZoneCellViewModel = TimeZoneCellViewModel()
+    @ObservedObject var vm: TimeZoneCellViewModel 
     
     var body: some View {
         HStack{
             
             VStack(alignment: .leading){
-                Text("Toronto")
-                    .font(.system(size: 25))
-                Text("10 hrs 30 mins behind")
+                Text(vm.zone)
+                    .font(.system(size: 20))
+                Text("\(vm.difference.0) hrs \(vm.difference.1) mins behind")
+                    .font(.system(size: 12))
                     .foregroundColor(.gray)
             }
             
             Spacer()
             
-            Text("00:00")
-                .font(.system(size: 40))
+            Text(vm.time)
+                .font(.system(size: 33))
             VStack {
                 Spacer()
-                Text("am")
+                Text(vm.meridian)
                     .padding(.bottom, 32)
             }
         }
         .padding(.horizontal)
         .frame(height: 100)
-        .clipShape(RoundedRectangle(cornerRadius: 5))
+        .background(content: {
+            Color("lightAsh")
+                .padding(.all, 5)
+                .clipShape(RoundedRectangle(cornerRadius: 35))
+        })
     }
 }
 
 struct TimeZoneCellView_Previews: PreviewProvider {
     static var previews: some View {
-        TimeZoneCellView()
+        TimeZoneCellView(vm: TimeZoneCellViewModel(timeZone: ""))
     }
 }

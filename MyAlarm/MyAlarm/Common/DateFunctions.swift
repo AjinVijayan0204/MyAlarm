@@ -18,6 +18,7 @@ enum TimeComponent{
     case hourMin
     case seconds
     case meridian
+    case hourMinSec
 }
 
 extension TimeComponent{
@@ -26,6 +27,8 @@ extension TimeComponent{
         
         switch self{
         case .hourMin:
+            return "hh:mm"
+        case .hourMinSec:
             return "hh:mm:ss"
         case .seconds:
             return "ss"

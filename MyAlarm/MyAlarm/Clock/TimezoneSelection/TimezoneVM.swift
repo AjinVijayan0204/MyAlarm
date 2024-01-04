@@ -10,7 +10,7 @@ import Foundation
 class TimezoneViewModel: ObservableObject{
     
     var timeZones: [String]{
-        TimeZone.abbreviationDictionary.values.map { data in
+        TimeZone.abbreviationDictionary.keys.map { data in
             data
         }
     }
@@ -21,5 +21,9 @@ class TimezoneViewModel: ObservableObject{
     
     func addZone(){
         clockVM.addTimeZone(named: self.selected)
+    }
+    
+    func getZone(for zone: String) -> String {
+        return TimeZone.abbreviationDictionary[zone] ?? TimeZone.current.identifier
     }
 }

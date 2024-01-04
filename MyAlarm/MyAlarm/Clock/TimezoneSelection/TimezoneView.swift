@@ -29,7 +29,7 @@ struct TimezoneView: View {
             Spacer()
             Picker(selection: $vm.selected) {
                 ForEach(vm.timeZones, id: \.self){ zone in
-                    Text(zone)
+                    Text(vm.getZone(for: zone))
                 }
             } label: {
                 //
