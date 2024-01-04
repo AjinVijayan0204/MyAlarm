@@ -17,7 +17,7 @@ struct TimeZoneCellView: View {
             VStack(alignment: .leading){
                 Text(vm.zone)
                     .font(.system(size: 20))
-                Text("\(vm.difference.0) hrs \(vm.difference.1) mins behind")
+                Text("\(vm.difference.0) hrs \(vm.difference.1) mins \(vm.change)")
                     .font(.system(size: 12))
                     .foregroundColor(.gray)
             }
