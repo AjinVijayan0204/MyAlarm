@@ -32,6 +32,8 @@ final class Coordinator: ObservableObject{
             TimerView(vm: container.timerVM)
         case .StopWatch:
             StopwatchView(vm: container.stopwatchVM)
+        case .Alarm:
+            AlarmView()
         default:
             Text("View in progress")
         }
