@@ -11,6 +11,8 @@
 		875920702B2712D700BCBBB4 /* StopwatchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8759206F2B2712D700BCBBB4 /* StopwatchView.swift */; };
 		878226762B45351800552FB1 /* TimeZoneCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 878226752B45351800552FB1 /* TimeZoneCellView.swift */; };
 		878226782B45354400552FB1 /* TimeZoneCellVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 878226772B45354400552FB1 /* TimeZoneCellVM.swift */; };
+		8782267B2B49300C00552FB1 /* AlarmVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8782267A2B49300C00552FB1 /* AlarmVM.swift */; };
+		8782267D2B49301C00552FB1 /* AlarmView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8782267C2B49301C00552FB1 /* AlarmView.swift */; };
 		878682152B09F8DE004E67FD /* MyAlarmApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 878682142B09F8DE004E67FD /* MyAlarmApp.swift */; };
 		878682172B09F8DE004E67FD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 878682162B09F8DE004E67FD /* ContentView.swift */; };
 		878682192B09F8DF004E67FD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 878682182B09F8DF004E67FD /* Assets.xcassets */; };
@@ -38,6 +40,8 @@
 		8759206F2B2712D700BCBBB4 /* StopwatchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopwatchView.swift; sourceTree = "<group>"; };
 		878226752B45351800552FB1 /* TimeZoneCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeZoneCellView.swift; sourceTree = "<group>"; };
 		878226772B45354400552FB1 /* TimeZoneCellVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeZoneCellVM.swift; sourceTree = "<group>"; };
+		8782267A2B49300C00552FB1 /* AlarmVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmVM.swift; sourceTree = "<group>"; };
+		8782267C2B49301C00552FB1 /* AlarmView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmView.swift; sourceTree = "<group>"; };
 		878682112B09F8DE004E67FD /* MyAlarm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyAlarm.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		878682142B09F8DE004E67FD /* MyAlarmApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyAlarmApp.swift; sourceTree = "<group>"; };
 		878682162B09F8DE004E67FD /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -110,6 +114,15 @@
 			path = TimeZonecell;
 			sourceTree = "<group>";
 		};
+		878226792B492FD300552FB1 /* Alarm */ = {
+			isa = PBXGroup;
+			children = (
+				8782267A2B49300C00552FB1 /* AlarmVM.swift */,
+				8782267C2B49301C00552FB1 /* AlarmView.swift */,
+			);
+			path = Alarm;
+			sourceTree = "<group>";
+		};
 		878682082B09F8DE004E67FD = {
 			isa = PBXGroup;
 			children = (
@@ -130,6 +143,7 @@
 		878682132B09F8DE004E67FD /* MyAlarm */ = {
 			isa = PBXGroup;
 			children = (
+				878226792B492FD300552FB1 /* Alarm */,
 				87F201C82B40600200158232 /* Container */,
 				8759206C2B27121F00BCBBB4 /* Stopwatch */,
 				878682572B24313E004E67FD /* Timer */,
@@ -288,12 +302,14 @@
 				878226762B45351800552FB1 /* TimeZoneCellView.swift in Sources */,
 				878682562B18BD69004E67FD /* Coordinator.swift in Sources */,
 				87F201CA2B40601200158232 /* Container.swift in Sources */,
+				8782267D2B49301C00552FB1 /* AlarmView.swift in Sources */,
 				878226782B45354400552FB1 /* TimeZoneCellVM.swift in Sources */,
 				8786822D2B0A1A97004E67FD /* TabItem.swift in Sources */,
 				878682152B09F8DE004E67FD /* MyAlarmApp.swift in Sources */,
 				8759206E2B2712B000BCBBB4 /* StopwatchVM.swift in Sources */,
 				87F201C72B3E828900158232 /* TimezoneVM.swift in Sources */,
 				8786825B2B243249004E67FD /* TimerView.swift in Sources */,
+				8782267B2B49300C00552FB1 /* AlarmVM.swift in Sources */,
 				8786824C2B0BD194004E67FD /* ClockView.swift in Sources */,
 				878682242B09FDBD004E67FD /* HomeTabVM.swift in Sources */,
 				8786822A2B0A18EA004E67FD /* HomeTabView.swift in Sources */,
